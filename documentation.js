@@ -112,7 +112,7 @@ function loadUserAppSection(insertBefore) {
             User Application Features
         </h2>
         
-        <div class="content-block">
+        <div class=\"feature-card-doc\">
             <h3>1. User Authentication & Onboarding</h3>
             <h4>Registration Options</h4>
             <ul>
