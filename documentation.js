@@ -1263,6 +1263,7 @@ function loadVariantComparisonSection(insertBefore) {
             <p class="lead-text">Detailed side-by-side comparison of all implementation variants to help you make an informed decision based on your specific requirements, budget, and timeline.</p>
         </div>
 
+        <h3>Variants 1-3: Foundation & Growth</h3>
         <div class="execution-table-wrapper">
             <table class="execution-comparison-table">
                 <thead>
@@ -1271,9 +1272,6 @@ function loadVariantComparisonSection(insertBefore) {
                         <th>Variant 1</th>
                         <th>Variant 2</th>
                         <th>Variant 3</th>
-                        <th class="recommended-column">Variant 4 ⭐</th>
-                        <th>Variant 5</th>
-                        <th>Variant 6</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -1282,132 +1280,193 @@ function loadVariantComparisonSection(insertBefore) {
                         <td>Web MVP</td>
                         <td>Enhanced Web</td>
                         <td>Web + Hybrid Mobile</td>
-                        <td class="recommended-column">Full Cross-Platform</td>
-                        <td>Enterprise Scale</td>
-                        <td>Global Ecosystem</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">Timeline</td>
                         <td>8 weeks</td>
                         <td>14 weeks</td>
                         <td>22 weeks</td>
-                        <td class="recommended-column">30 weeks</td>
-                        <td>40 weeks</td>
-                        <td>52+ weeks</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">Budget (INR)</td>
                         <td>2.5-4L</td>
                         <td>5-7.5L</td>
                         <td>9-13L</td>
-                        <td class="recommended-column">14-18L</td>
-                        <td>20-25L</td>
-                        <td>30L+</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">Team Size</td>
                         <td>3-4</td>
                         <td>4-6</td>
                         <td>6-8</td>
-                        <td class="recommended-column">8-12</td>
-                        <td>12-16</td>
-                        <td>16+</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">Platforms</td>
                         <td>Web only</td>
                         <td>Web + PWA</td>
                         <td>Web + Hybrid Mobile</td>
-                        <td class="recommended-column">Web + Native iOS/Android</td>
-                        <td>Multi-region native</td>
-                        <td>Global infrastructure</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">Categories</td>
                         <td>Electronics only</td>
                         <td>All categories (basic)</td>
                         <td>All categories</td>
-                        <td class="recommended-column">All categories (full features)</td>
-                        <td>All + advanced features</td>
-                        <td>All + innovations</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">Admin Panel</td>
                         <td>Basic dashboard</td>
                         <td>Enhanced admin</td>
                         <td>Multi-role admin</td>
-                        <td class="recommended-column">Full hierarchical admin</td>
-                        <td>Enterprise admin</td>
-                        <td>Global governance</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">QC System</td>
                         <td>Manual process</td>
                         <td>Basic scheduling</td>
                         <td>Integrated QC workflow</td>
-                        <td class="recommended-column">Full QC automation</td>
-                        <td>AI-assisted QC</td>
-                        <td>Predictive quality</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">Scalability</td>
                         <td>1K users</td>
                         <td>10K users</td>
                         <td>50K users</td>
-                        <td class="recommended-column">500K users</td>
-                        <td>5M users</td>
-                        <td>50M+ users</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">Payment Options</td>
                         <td>Basic (UPI, Cards)</td>
                         <td>Multiple gateways</td>
                         <td>Full payment suite</td>
-                        <td class="recommended-column">EMI + International</td>
-                        <td>B2B payment terms</td>
-                        <td>Multi-currency + Crypto</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">Communication</td>
                         <td>Basic messaging</td>
                         <td>Real-time chat</td>
                         <td>Video calling</td>
-                        <td class="recommended-column">Full communication suite</td>
-                        <td>AI chat assistance</td>
-                        <td>Multi-language AI support</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">Analytics</td>
                         <td>Basic reports</td>
                         <td>Standard analytics</td>
                         <td>Advanced analytics</td>
-                        <td class="recommended-column">Comprehensive insights</td>
-                        <td>Predictive analytics</td>
-                        <td>AI-powered BI</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">AI Features</td>
                         <td>None</td>
                         <td>None</td>
                         <td>Basic recommendations</td>
-                        <td class="recommended-column">Smart pricing + Fraud detection</td>
-                        <td>Advanced AI/ML</td>
-                        <td>Computer vision + NLP</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">Security</td>
                         <td>Basic SSL</td>
                         <td>Enhanced security</td>
                         <td>Advanced encryption</td>
-                        <td class="recommended-column">Enterprise security</td>
-                        <td>SOC 2 compliance</td>
-                        <td>Blockchain + Biometric</td>
                     </tr>
                     <tr>
                         <td class="table-highlight">Support</td>
                         <td>Email only</td>
                         <td>Email + Chat</td>
                         <td>Multi-channel</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Variants 4-6: Scale & Enterprise</h3>
+        <div class="execution-table-wrapper">
+            <table class="execution-comparison-table">
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th class="recommended-column">Variant 4 ⭐</th>
+                        <th>Variant 5</th>
+                        <th>Variant 6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-highlight">Scope</td>
+                        <td class="recommended-column">Full Cross-Platform</td>
+                        <td>Enterprise Scale</td>
+                        <td>Global Ecosystem</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Timeline</td>
+                        <td class="recommended-column">30 weeks</td>
+                        <td>40 weeks</td>
+                        <td>52+ weeks</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Budget (INR)</td>
+                        <td class="recommended-column">14-18L</td>
+                        <td>20-25L</td>
+                        <td>30L+</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Team Size</td>
+                        <td class="recommended-column">8-12</td>
+                        <td>12-16</td>
+                        <td>16+</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Platforms</td>
+                        <td class="recommended-column">Web + Native iOS/Android</td>
+                        <td>Multi-region native</td>
+                        <td>Global infrastructure</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Categories</td>
+                        <td class="recommended-column">All categories (full features)</td>
+                        <td>All + advanced features</td>
+                        <td>All + innovations</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Admin Panel</td>
+                        <td class="recommended-column">Full hierarchical admin</td>
+                        <td>Enterprise admin</td>
+                        <td>Global governance</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">QC System</td>
+                        <td class="recommended-column">Full QC automation</td>
+                        <td>AI-assisted QC</td>
+                        <td>Predictive quality</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Scalability</td>
+                        <td class="recommended-column">500K users</td>
+                        <td>5M users</td>
+                        <td>50M+ users</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Payment Options</td>
+                        <td class="recommended-column">EMI + International</td>
+                        <td>B2B payment terms</td>
+                        <td>Multi-currency + Crypto</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Communication</td>
+                        <td class="recommended-column">Full communication suite</td>
+                        <td>AI chat assistance</td>
+                        <td>Multi-language AI support</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Analytics</td>
+                        <td class="recommended-column">Comprehensive insights</td>
+                        <td>Predictive analytics</td>
+                        <td>AI-powered BI</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">AI Features</td>
+                        <td class="recommended-column">Smart pricing + Fraud detection</td>
+                        <td>Advanced AI/ML</td>
+                        <td>Computer vision + NLP</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Security</td>
+                        <td class="recommended-column">Enterprise security</td>
+                        <td>SOC 2 compliance</td>
+                        <td>Blockchain + Biometric</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Support</td>
                         <td class="recommended-column">24/7 support system</td>
                         <td>Dedicated account managers</td>
                         <td>Global support centers</td>
