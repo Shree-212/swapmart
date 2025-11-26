@@ -124,7 +124,7 @@
     background: var(--white);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
-    padding: var(--spacing-xl) var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-md);
     min-height: 600px;
 }
 
@@ -154,8 +154,8 @@
 
 /* Documentation Sections */
 .doc-section {
-    margin-bottom: var(--spacing-xl);
-    padding-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
     border-bottom: 1px solid var(--light-gray);
 }
 
@@ -172,35 +172,35 @@
 .section-heading {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
-    padding-bottom: var(--spacing-md);
-    border-bottom: 3px solid var(--primary);
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--primary);
     color: var(--dark);
     margin-top: 0;
 }
 
 .heading-number {
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     background: var(--gradient-primary);
     color: var(--white);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xl);
     font-weight: 700;
     flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.15);
 }
 
 .section-intro {
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
     background: linear-gradient(135deg, rgba(0, 102, 204, 0.03) 0%, rgba(0, 168, 107, 0.03) 100%);
-    padding: var(--spacing-lg) var(--spacing-xl);
+    padding: var(--spacing-md) var(--spacing-lg);
     border-radius: var(--radius-md);
-    border-left: 5px solid var(--primary);
+    border-left: 4px solid var(--primary);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
@@ -214,7 +214,7 @@
 }
 
 .content-block {
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     padding: 0;
 }
 
@@ -223,9 +223,9 @@
 }
 
 .content-block h3 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     color: var(--dark);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
     margin-top: 0;
     padding-left: 0;
     border-left: none;
@@ -235,7 +235,7 @@
 }
 
 .content-block + .content-block h3 {
-    margin-top: calc(var(--spacing-xl) * 1.5);
+    margin-top: var(--spacing-lg);
 }
 
 .content-block h3::before {
@@ -294,8 +294,8 @@
     background: linear-gradient(135deg, rgba(0, 102, 204, 0.02) 0%, rgba(0, 168, 107, 0.02) 100%);
     border: 1px solid var(--light-gray);
     border-radius: var(--radius-md);
-    padding: var(--spacing-lg);
-    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     transition: all var(--transition-base);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
@@ -310,8 +310,8 @@
 .category-card h3,
 .feature-card-doc h3 {
     margin-top: 0 !important;
-    margin-bottom: var(--spacing-md);
-    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.25rem;
     color: var(--dark);
     display: flex;
     align-items: center;
@@ -322,10 +322,10 @@
 .feature-card-doc h3::before {
     content: '';
     display: inline-block;
-    width: 8px;
-    height: 40px;
+    width: 6px;
+    height: 32px;
     background: var(--gradient-primary);
-    border-radius: 4px;
+    border-radius: 3px;
     margin-bottom: 0;
 }
 
@@ -375,37 +375,37 @@
 /* Feature Boxes */
 .feature-boxes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-lg);
-    margin-bottom: var(--spacing-lg);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
 }
 
 .feature-box {
     background: var(--off-white);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-radius: var(--radius-md);
-    border: 2px solid var(--light-gray);
+    border: 1px solid var(--light-gray);
     transition: all var(--transition-base);
 }
 
 .feature-box:hover {
     border-color: var(--primary);
     box-shadow: var(--shadow-md);
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .feature-box-icon {
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     background: var(--gradient-primary);
     color: var(--white);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.75rem;
-    margin-bottom: var(--spacing-md);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
 }
 
 .feature-box h4 {
@@ -711,8 +711,8 @@
     background: var(--white);
     border: 1px solid var(--light-gray);
     border-radius: var(--radius-md);
-    padding: var(--spacing-lg);
-    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     transition: all var(--transition-base);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
@@ -733,33 +733,33 @@
     display: inline-block;
     background: var(--gradient-secondary);
     color: var(--white);
-    padding: 0.5rem 1.25rem;
+    padding: 0.375rem 1rem;
     border-radius: var(--radius-full);
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    margin-bottom: var(--spacing-md);
-    box-shadow: 0 3px 8px rgba(0, 168, 107, 0.25);
+    margin-bottom: var(--spacing-sm);
+    box-shadow: 0 2px 6px rgba(0, 168, 107, 0.2);
 }
 
 .variant-detail-header {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 .variant-detail-number {
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     background: var(--gradient-primary);
     color: var(--white);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xl);
     font-weight: 700;
     flex-shrink: 0;
 }
@@ -767,7 +767,7 @@
 .variant-detail-header h3 {
     color: var(--dark);
     margin-bottom: 0;
-    font-size: var(--font-size-xl);
+    font-size: 1.25rem;
     border-left: none;
     padding-left: 0;
 }
@@ -778,17 +778,17 @@
 
 .variant-detail-desc {
     color: var(--medium-gray);
-    line-height: 1.85;
-    margin-bottom: var(--spacing-lg);
-    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.9375rem;
 }
 
 .variant-detail-metrics {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-md);
-    padding: var(--spacing-md);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-sm);
     background: linear-gradient(135deg, rgba(0, 102, 204, 0.03) 0%, rgba(0, 168, 107, 0.03) 100%);
     border-radius: var(--radius-md);
     border: 1px solid rgba(0, 102, 204, 0.08);
@@ -812,7 +812,7 @@
 }
 
 .metric-value {
-    font-size: 1.375rem;
+    font-size: 1.125rem;
     color: var(--primary);
     font-weight: 700;
     display: block;
@@ -821,8 +821,8 @@
 .variant-detail-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-md);
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
 }
 
 .variant-tech h4,
@@ -884,22 +884,23 @@
 .execution-table-wrapper {
     overflow-x: auto;
     overflow-y: visible;
-    margin: var(--spacing-md) 0;
+    margin: var(--spacing-sm) 0;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
     -webkit-overflow-scrolling: touch;
     width: 100%;
     max-width: 100%;
     position: relative;
+    display: block;
 }
 
 .execution-comparison-table {
     width: 100%;
-    min-width: 1000px;
+    min-width: 1200px;
     border-collapse: collapse;
     background: var(--white);
     font-size: 0.875rem;
-    table-layout: fixed;
+    table-layout: auto;
 }
 
 .execution-comparison-table thead {
@@ -977,12 +978,12 @@
     }
     
     .doc-content {
-        padding: var(--spacing-md);
+        padding: var(--spacing-sm);
     }
     
     .execution-comparison-table {
         font-size: 0.75rem;
-        min-width: 900px;
+        min-width: 1000px;
     }
     
     .execution-comparison-table th,
@@ -993,7 +994,8 @@
     .category-card,
     .feature-card-doc,
     .variant-detail {
-        padding: var(--spacing-md);
+        padding: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);
     }
 }
 
@@ -1013,15 +1015,15 @@
     }
     
     .doc-section {
-        margin-bottom: var(--spacing-md);
-        padding-bottom: var(--spacing-md);
+        margin-bottom: var(--spacing-sm);
+        padding-bottom: var(--spacing-sm);
     }
     
     .section-heading {
         flex-direction: row;
         align-items: center;
         gap: var(--spacing-sm);
-        margin-bottom: var(--spacing-md);
+        margin-bottom: var(--spacing-sm);
     }
     
     .heading-number {
@@ -1045,18 +1047,18 @@
     
     .variant-detail-metrics {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
-        padding: var(--spacing-sm);
+        gap: 0.375rem;
+        padding: var(--spacing-xs);
     }
     
     .execution-table-wrapper {
-        margin: var(--spacing-sm) calc(var(--spacing-sm) * -1);
+        margin: var(--spacing-xs) calc(var(--spacing-sm) * -1);
         border-radius: 0;
     }
     
     .execution-comparison-table {
         font-size: 0.7rem;
-        min-width: 750px;
+        min-width: 800px;
     }
     
     .execution-comparison-table th,
@@ -1067,13 +1069,13 @@
     
     .category-card,
     .feature-card-doc {
-        padding: var(--spacing-sm);
-        margin-bottom: var(--spacing-sm);
+        padding: var(--spacing-xs);
+        margin-bottom: var(--spacing-xs);
     }
     
     .variant-detail {
-        padding: var(--spacing-sm);
-        margin-bottom: var(--spacing-sm);
+        padding: var(--spacing-xs);
+        margin-bottom: var(--spacing-xs);
     }
     
     .category-card h3,
