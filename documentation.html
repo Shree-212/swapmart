@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwapMart - Complete Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="documentation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-icon">🔄</span>
+                <span class="brand-text">SwapMart</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#platform-overview">Platform</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#user-app">User App</a></li>
+                <li><a href="#admin-panel">Admin Panel</a></li>
+                <li><a href="#user-journeys">User Journeys</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Documentation Hero -->
+    <section class="doc-hero">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Overview</a>
+            <h1 class="doc-title">Complete Technical Documentation</h1>
+            <p class="doc-subtitle">Comprehensive scope and implementation guide for SwapMart platform</p>
+        </div>
+    </section>
+
+    <!-- Documentation Container -->
+    <div class="doc-container">
+        <div class="container">
+            <div class="doc-layout">
+                <!-- Sidebar TOC -->
+                <aside class="doc-sidebar" id="docSidebar">
+                    <div class="sidebar-sticky">
+                        <h3 class="sidebar-title">Table of Contents</h3>
+                        <nav class="doc-nav">
+                            <a href="#platform-overview" class="doc-nav-link active">
+                                <span class="nav-number">01</span>
+                                <span class="nav-text">Platform Overview</span>
+                            </a>
+                            <a href="#categories" class="doc-nav-link">
+                                <span class="nav-number">02</span>
+                                <span class="nav-text">Product Categories</span>
+                            </a>
+                            <a href="#user-app" class="doc-nav-link">
+                                <span class="nav-number">03</span>
+                                <span class="nav-text">User Application</span>
+                            </a>
+                            <a href="#admin-panel" class="doc-nav-link">
+                                <span class="nav-number">04</span>
+                                <span class="nav-text">Admin Panel</span>
+                            </a>
+                            <a href="#user-journeys" class="doc-nav-link">
+                                <span class="nav-number">05</span>
+                                <span class="nav-text">User Journeys</span>
+                            </a>
+                            <a href="#technical-architecture" class="doc-nav-link">
+                                <span class="nav-number">06</span>
+                                <span class="nav-text">Technical Architecture</span>
+                            </a>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="doc-content">
+                    <!-- Loading indicator -->
+                    <div id="content-loader" class="content-loader">
+                        <div class="loader-spinner"></div>
+                        <p>Loading documentation...</p>
+                    </div>
+
+                    <!-- Section 1: Platform Overview -->
+                    <section id="platform-overview" class="doc-section">
+                        <h2 class="section-heading">
+                            <span class="heading-number">01</span>
+                            Platform Overview
+                        </h2>
+                        <div class="section-intro">
+                            <p class="lead-text">SwapMart is a comprehensive digital marketplace platform designed for trusted second-hand transactions across multiple product categories, combining peer-to-peer commerce with direct buyback operations.</p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>Core Concept</h3>
+                            <p>SwapMart bridges the gap between traditional classifieds and modern e-commerce by providing a quality-assured, transparent marketplace for pre-owned goods. The platform serves value-conscious buyers, individual sellers, small businesses, and property investors through an intuitive cross-platform interface.</p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>Business Model</h3>
+                            <h4>Hybrid Commerce Approach</h4>
+                            <ul>
+                                <li><strong>Direct Purchase (Electronics & Gadgets):</strong> Platform purchases devices directly from sellers, refurbishes them through comprehensive QC processes, and resells through the portal with quality certification</li>
+                                <li><strong>Peer-to-Peer Marketplace (Other Categories):</strong> Facilitates secure transactions between buyers and sellers for automobiles, real estate, and furniture with integrated communication and payment systems</li>
+                                <li><strong>Revenue Streams:</strong> Commission on peer-to-peer transactions, direct sales margins from refurbished electronics, premium subscription services for enhanced visibility, and promoted listing fees</li>
+                            </ul>
+                        </div>
+
+                        <div class="feature-boxes">
+                            <div class="feature-box">
+                                <div class="feature-box-icon">🎯</div>
+                                <h4>Target Market</h4>
+                                <ul>
+                                    <li>Value-conscious buyers seeking quality pre-owned products</li>
+                                    <li>Individual sellers monetizing unused assets</li>
+                                    <li>Small business owners requiring affordable equipment</li>
+                                    <li>Property investors and automobile enthusiasts</li>
+                                    <li>Students and young professionals on budget constraints</li>
+                                </ul>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-box-icon">🌐</div>
+                                <h4>Platform Architecture</h4>
+                                <ul>
+                                    <li>Native iOS application (Swift/SwiftUI)</li>
+                                    <li>Native Android application (Kotlin)</li>
+                                    <li>Progressive Web Application (React/Next.js)</li>
+                                    <li>Responsive design with cross-device sync</li>
+                                    <li>Cloud infrastructure for scalability</li>
+                                </ul>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-box-icon">🔒</div>
+                                <h4>Security & Trust</h4>
+                                <ul>
+                                    <li>SSL/TLS encryption for all communications</li>
+                                    <li>Multi-factor authentication system</li>
+                                    <li>PCI DSS compliant payment processing</li>
+                                    <li>Identity verification for users</li>
+                                    <li>Regular security audits and compliance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 2: Product Categories -->
+                    <section id="categories" class="doc-section">
+                        <h2 class="section-heading">
+                            <span class="heading-number">02</span>
+                            Product Categories
+                        </h2>
+
+                        <div class="content-block">
+                            <h3>1. Electronics & Gadgets</h3>
+                            <p><strong>Business Model:</strong> Direct Buyback</p>
+                            <h4>Supported Products</h4>
+                            <ul>
+                                <li>Smartphones and tablets (iOS and Android devices)</li>
+                                <li>Laptops and desktop computers</li>
+                                <li>Cameras and photography equipment</li>
+                                <li>Gaming consoles and accessories</li>
+                                <li>Wearables (smartwatches, fitness trackers)</li>
+                                <li>Audio devices (headphones, speakers)</li>
+                            </ul>
+                            <h4>Category-Specific Features</h4>
+                            <ul>
+                                <li>Instant price quote calculator based on model and condition</li>
+                                <li>IMEI/Serial number verification for authenticity</li>
+                                <li>Device specifications auto-fill from database</li>
+                                <li>Data wipe guidance and security checklist</li>
+                                <li>Warranty information tracking</li>
+                                <li>30+ point quality control inspection</li>
+                                <li>Refurbishment and certification process</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>2. Automobiles</h3>
+                            <p><strong>Business Model:</strong> Peer-to-Peer Marketplace</p>
+                            <h4>Supported Products</h4>
+                            <ul>
+                                <li>Pre-owned cars (hatchback, sedan, SUV, luxury)</li>
+                                <li>Motorcycles and scooters</li>
+                                <li>Electric vehicles</li>
+                                <li>Commercial vehicles</li>
+                            </ul>
+                            <h4>Category-Specific Features</h4>
+                            <ul>
+                                <li>Vehicle registration (RC) number lookup and verification</li>
+                                <li>Service history document upload and tracking</li>
+                                <li>Test drive scheduling with calendar integration</li>
+                                <li>RC transfer documentation support and guidance</li>
+                                <li>Insurance policy information display</li>
+                                <li>Mileage and ownership details</li>
+                                <li>Inspection reports from certified mechanics</li>
+                                <li>Loan/finance clearance certificate upload</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>3. Real Estate</h3>
+                            <p><strong>Business Model:</strong> Peer-to-Peer Marketplace</p>
+                            <h4>Supported Properties</h4>
+                            <ul>
+                                <li>Residential properties (apartments, villas, independent houses)</li>
+                                <li>Commercial spaces (offices, retail, warehouses)</li>
+                                <li>Land parcels (agricultural, residential plots)</li>
+                            </ul>
+                            <h4>Category-Specific Features</h4>
+                            <ul>
+                                <li>Comprehensive property details (area, rooms, amenities)</li>
+                                <li>Virtual tour support (360° photos and videos)</li>
+                                <li>Location map integration with neighborhood insights</li>
+                                <li>Legal document upload (title deed, NOC, etc.)</li>
+                                <li>Property valuation tools and price trends</li>
+                                <li>Site visit scheduling system</li>
+                                <li>Furnishing and fixture details</li>
+                                <li>Age of property and maintenance records</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-block">
+                            <h3>4. Furniture & Home</h3>
+                            <p><strong>Business Model:</strong> Peer-to-Peer Marketplace</p>
+                            <h4>Supported Products</h4>
+                            <ul>
+                                <li>Furniture sets and individual pieces</li>
+                                <li>Home appliances (refrigerators, washing machines, AC)</li>
+                                <li>Home decor items</li>
+                                <li>Kitchen equipment</li>
+                            </ul>
+                            <h4>Category-Specific Features</h4>
+                            <ul>
+                                <li>Dimensions and measurements specification</li>
+                                <li>Material and brand information</li>
+                                <li>Assembly instructions availability</li>
+                                <li>Pickup/delivery preferences selection</li>
+                                <li>Bulk listing for furniture sets</li>
+                                <li>Condition assessment with photos</li>
+                                <li>Warranty and bill upload options</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Load More Button -->
+                    <div class="load-more-section">
+                        <button class="btn btn-primary" id="loadMoreBtn" onclick="loadNextSection()">
+                            Load More Sections →
+                        </button>
+                    </div>
+
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-icon">🔄</span>
+                    <span class="brand-text">SwapMart</span>
+                </div>
+                <p class="footer-tagline">Your Trusted Second-Hand Marketplace</p>
+                <p class="footer-copyright">© 2025 SwapMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="documentation.js"></script>
+</body>
+</html>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwapMart - Technical Execution Plan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-icon">🔄</span>
+                <span class="brand-text">SwapMart</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#variants">Variants</a></li>
+                <li><a href="#comparison">Comparison</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">SwapMart</h1>
+                <p class="hero-subtitle">Technical Execution Plan</p>
+                <p class="hero-description">A comprehensive digital marketplace platform for trusted second-hand transactions across electronics, automobiles, real estate, and furniture</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Architecture Variants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Product Categories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Platforms</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Core Features</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section id="overview" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Executive Summary</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Hybrid Business Model</h3>
+                    <p>Direct buyback for electronics combined with peer-to-peer marketplace for automobiles, real estate, and furniture</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>Cross-Platform</h3>
+                    <p>Native iOS and Android applications with comprehensive web platform for maximum reach</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✅</div>
+                    <h3>Quality Assured</h3>
+                    <p>Comprehensive QC system with 30+ checkpoints for electronics and certification infrastructure</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>Scalable Architecture</h3>
+                    <p>From 1K to 50M+ users with enterprise-grade infrastructure and microservices design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Overview -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Platform Architecture</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🔐</div>
+                    <h4>User Application</h4>
+                    <ul>
+                        <li>Multi-category product discovery</li>
+                        <li>Bidding & negotiation systems</li>
+                        <li>In-app messaging & video calls</li>
+                        <li>Secure payment processing</li>
+                        <li>Category-specific features</li>
+                        <li>Transaction management</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚙️</div>
+                    <h4>Admin Panel</h4>
+                    <ul>
+                        <li>Hierarchical role-based access</li>
+                        <li>User & seller management</li>
+                        <li>Listing moderation</li>
+                        <li>Inventory control</li>
+                        <li>Transaction oversight</li>
+                        <li>Analytics & reporting</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔍</div>
+                    <h4>Quality Control</h4>
+                    <ul>
+                        <li>30+ point inspection checklist</li>
+                        <li>Device testing & grading</li>
+                        <li>Photo documentation</li>
+                        <li>Automated scheduling</li>
+                        <li>Inspector mobile app</li>
+                        <li>Certification system</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💳</div>
+                    <h4>Payment Systems</h4>
+                    <ul>
+                        <li>Multiple payment gateways</li>
+                        <li>UPI, cards, wallets</li>
+                        <li>EMI options</li>
+                        <li>Secure escrow for P2P</li>
+                        <li>Instant seller payouts</li>
+                        <li>Refund management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Variants -->
+    <section id="variants" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Architecture Variants</h2>
+            <p class="section-description">Six carefully crafted pathways from MVP to enterprise scale</p>
+            
+            <div class="variants-container">
+                <!-- Variant 1 -->
+                <div class="variant-card">
+                    <div class="variant-header">
+                        <div class="variant-number">1</div>
+                        <h3>Web-Only MVP</h3>
+                    </div>
+                    <p class="variant-description">Minimal viable product focused on electronics buyback through web platform</p>
+                    <div class="variant-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Timeline:</span>
+                            <span class="detail-value">8 weeks</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Budget:</span>
+                            <span class="detail-value">INR 2.5-4 Lakhs</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Team Size:</span>
+                            <span class="detail-value">3-4 members</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Scalability:</span>
+                            <span class="detail-value">1K users</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Razorpay</span>
+                    </div>
+                </div>
+
+                <!-- Variant 2 -->
+                <div class="variant-card">
+                    <div class="variant-header">
+                        <div class="variant-number">2</div>
+                        <h3>Enhanced Web Platform</h3>
+                    </div>
+                    <p class="variant-description">Comprehensive web platform with all categories and PWA support</p>
+                    <div class="variant-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Timeline:</span>
+                            <span class="detail-value">14 weeks</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Budget:</span>
+                            <span class="detail-value">INR 5-7.5 Lakhs</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Team Size:</span>
+                            <span class="detail-value">4-6 members</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Scalability:</span>
+                            <span class="detail-value">10K users</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">PWA</span>
+                    </div>
+                </div>
+
+                <!-- Variant 3 -->
+                <div class="variant-card">
+                    <div class="variant-header">
+                        <div class="variant-number">3</div>
+                        <h3>Web + Hybrid Mobile</h3>
+                    </div>
+                    <p class="variant-description">Cross-platform solution with React Native mobile apps</p>
+                    <div class="variant-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Timeline:</span>
+                            <span class="detail-value">22 weeks</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Budget:</span>
+                            <span class="detail-value">INR 9-13 Lakhs</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Team Size:</span>
+                            <span class="detail-value">6-8 members</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Scalability:</span>
+                            <span class="detail-value">50K users</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Microservices</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                </div>
+
+                <!-- Variant 4 (Recommended) -->
+                <div class="variant-card variant-recommended">
+                    <div class="recommended-badge">RECOMMENDED</div>
+                    <div class="variant-header">
+                        <div class="variant-number">4</div>
+                        <h3>Full Cross-Platform</h3>
+                    </div>
+                    <p class="variant-description">Native iOS/Android apps with complete marketplace features</p>
+                    <div class="variant-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Timeline:</span>
+                            <span class="detail-value">30 weeks</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Budget:</span>
+                            <span class="detail-value">INR 14-18 Lakhs</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Team Size:</span>
+                            <span class="detail-value">8-12 members</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Scalability:</span>
+                            <span class="detail-value">500K users</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Swift/SwiftUI</span>
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Microservices</span>
+                        <span class="tech-tag">AWS/Azure</span>
+                    </div>
+                </div>
+
+                <!-- Variant 5 -->
+                <div class="variant-card">
+                    <div class="variant-header">
+                        <div class="variant-number">5</div>
+                        <h3>Enterprise Scale</h3>
+                    </div>
+                    <p class="variant-description">Advanced features with AI-driven quality control and recommendations</p>
+                    <div class="variant-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Timeline:</span>
+                            <span class="detail-value">40 weeks</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Budget:</span>
+                            <span class="detail-value">INR 20-25 Lakhs</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Team Size:</span>
+                            <span class="detail-value">12-16 members</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Scalability:</span>
+                            <span class="detail-value">5M users</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Native Apps</span>
+                        <span class="tech-tag">AI/ML</span>
+                        <span class="tech-tag">Microservices</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Multi-Region</span>
+                    </div>
+                </div>
+
+                <!-- Variant 6 -->
+                <div class="variant-card">
+                    <div class="variant-header">
+                        <div class="variant-number">6</div>
+                        <h3>Global Ecosystem</h3>
+                    </div>
+                    <p class="variant-description">International marketplace with blockchain and advanced innovations</p>
+                    <div class="variant-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Timeline:</span>
+                            <span class="detail-value">52+ weeks</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Budget:</span>
+                            <span class="detail-value">INR 30+ Lakhs</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Team Size:</span>
+                            <span class="detail-value">16+ members</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Scalability:</span>
+                            <span class="detail-value">50M+ users</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Global CDN</span>
+                        <span class="tech-tag">Multi-Currency</span>
+                        <span class="tech-tag">Blockchain</span>
+                        <span class="tech-tag">Advanced AI</span>
+                        <span class="tech-tag">IoT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section id="comparison" class="section">
+        <div class="container">
+            <h2 class="section-title">Variant Comparison</h2>
+            <div class="table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Variant 1</th>
+                            <th>Variant 2</th>
+                            <th>Variant 3</th>
+                            <th>Variant 4</th>
+                            <th>Variant 5</th>
+                            <th>Variant 6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Scope</strong></td>
+                            <td>Web MVP</td>
+                            <td>Enhanced Web</td>
+                            <td>Web + Basic Mobile</td>
+                            <td class="highlight-cell">Full Cross-Platform</td>
+                            <td>Enterprise Scale</td>
+                            <td>Global Ecosystem</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Timeline</strong></td>
+                            <td>8 weeks</td>
+                            <td>14 weeks</td>
+                            <td>22 weeks</td>
+                            <td class="highlight-cell">30 weeks</td>
+                            <td>40 weeks</td>
+                            <td>52+ weeks</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Budget (INR)</strong></td>
+                            <td>2.5-4L</td>
+                            <td>5-7.5L</td>
+                            <td>9-13L</td>
+                            <td class="highlight-cell">14-18L</td>
+                            <td>20-25L</td>
+                            <td>30L+</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Platforms</strong></td>
+                            <td>Web only</td>
+                            <td>Web + PWA</td>
+                            <td>Web + Hybrid Mobile</td>
+                            <td class="highlight-cell">Native iOS/Android + Web</td>
+                            <td>Multi-region native</td>
+                            <td>Global infrastructure</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Categories</strong></td>
+                            <td>Electronics only</td>
+                            <td>All categories (basic)</td>
+                            <td>All categories</td>
+                            <td class="highlight-cell">All categories (full)</td>
+                            <td>All + advanced</td>
+                            <td>All + innovations</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Admin Panel</strong></td>
+                            <td>Basic dashboard</td>
+                            <td>Enhanced admin</td>
+                            <td>Multi-role admin</td>
+                            <td class="highlight-cell">Full hierarchical</td>
+                            <td>Enterprise admin</td>
+                            <td>Global governance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>QC System</strong></td>
+                            <td>Manual process</td>
+                            <td>Basic scheduling</td>
+                            <td>Integrated QC</td>
+                            <td class="highlight-cell">Full QC automation</td>
+                            <td>AI-assisted QC</td>
+                            <td>Predictive quality</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Scalability</strong></td>
+                            <td>1K users</td>
+                            <td>10K users</td>
+                            <td>50K users</td>
+                            <td class="highlight-cell">500K users</td>
+                            <td>5M users</td>
+                            <td>50M+ users</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Core Platform Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-card-icon">📱</div>
+                    <h3>Multi-Category Marketplace</h3>
+                    <p>Comprehensive platform supporting electronics, automobiles, real estate, and furniture with category-specific features</p>
+                    <ul class="feature-list">
+                        <li>Electronics with instant quotes and IMEI verification</li>
+                        <li>Automobiles with RC lookup and service history</li>
+                        <li>Real estate with virtual tours and valuations</li>
+                        <li>Furniture with dimensions and assembly info</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">🔍</div>
+                    <h3>Quality Control System</h3>
+                    <p>Comprehensive 30+ point inspection and certification infrastructure for electronics</p>
+                    <ul class="feature-list">
+                        <li>Automated QC appointment scheduling</li>
+                        <li>Inspector mobile app with photo documentation</li>
+                        <li>Device testing and grading system</li>
+                        <li>Certification badges for verified items</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">💬</div>
+                    <h3>Communication Tools</h3>
+                    <p>Real-time messaging and video calling integrated into the platform</p>
+                    <ul class="feature-list">
+                        <li>In-app chat with media sharing</li>
+                        <li>Video calls for product inspection</li>
+                        <li>Offer submission through chat</li>
+                        <li>Message templates and notifications</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-icon">🛡️</div>
+                    <h3>Secure Transactions</h3>
+                    <p>Multiple payment methods with PCI DSS compliant processing</p>
+                    <ul class="feature-list">
+                        <li>UPI, cards, wallets, and net banking</li>
+                        <li>EMI options for high-value items</li>
+                        <li>Escrow system for peer-to-peer</li>
+                        <li>Automated refund processing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Technology Stack Highlights</h2>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">Swift/SwiftUI (iOS)</div>
+                        <div class="tech-item">Kotlin (Android)</div>
+                        <div class="tech-item">React/Next.js (Web)</div>
+                        <div class="tech-item">TypeScript</div>
+                        <div class="tech-item">Redux/Context API</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">Node.js/Express</div>
+                        <div class="tech-item">Python (ML/AI)</div>
+                        <div class="tech-item">Microservices</div>
+                        <div class="tech-item">RESTful + GraphQL APIs</div>
+                        <div class="tech-item">WebSockets</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Database</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">PostgreSQL</div>
+                        <div class="tech-item">MongoDB</div>
+                        <div class="tech-item">Redis (Cache)</div>
+                        <div class="tech-item">Elasticsearch</div>
+                        <div class="tech-item">S3 (Storage)</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Infrastructure</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">AWS/Azure</div>
+                        <div class="tech-item">Kubernetes</div>
+                        <div class="tech-item">Docker</div>
+                        <div class="tech-item">Load Balancers</div>
+                        <div class="tech-item">CDN</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Integrations</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">Razorpay/PayU</div>
+                        <div class="tech-item">Twilio/Agora</div>
+                        <div class="tech-item">Google Maps</div>
+                        <div class="tech-item">Delhivery APIs</div>
+                        <div class="tech-item">SMS/Email Services</div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>DevOps</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">CI/CD Pipelines</div>
+                        <div class="tech-item">Jenkins/GitLab CI</div>
+                        <div class="tech-item">Monitoring (Datadog)</div>
+                        <div class="tech-item">ELK Stack</div>
+                        <div class="tech-item">Automated Testing</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build SwapMart?</h2>
+                <p>Let's create a trusted marketplace for millions of buyers and sellers</p>
+                <div class="cta-buttons">
+                    <a href="documentation.html" class="btn btn-primary">View Full Documentation</a>
+                    <a href="#comparison" class="btn btn-secondary">Compare Variants</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-icon">🔄</span>
+                    <span class="brand-text">SwapMart</span>
+                </div>
+                <p class="footer-tagline">Your Trusted Second-Hand Marketplace</p>
+                <p class="footer-copyright">© 2025 SwapMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
