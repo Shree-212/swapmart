@@ -124,7 +124,7 @@
     background: var(--white);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
-    padding: calc(var(--spacing-xl) * 1.5) var(--spacing-xl);
+    padding: var(--spacing-xl) var(--spacing-lg);
     min-height: 600px;
 }
 
@@ -154,9 +154,9 @@
 
 /* Documentation Sections */
 .doc-section {
-    margin-bottom: calc(var(--spacing-xl) * 2);
-    padding-bottom: calc(var(--spacing-xl) * 2);
-    border-bottom: 2px solid var(--light-gray);
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--light-gray);
 }
 
 .doc-section:last-child {
@@ -173,9 +173,9 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
-    margin-bottom: calc(var(--spacing-xl) * 1.25);
-    padding-bottom: var(--spacing-lg);
-    border-bottom: 4px solid var(--primary);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 3px solid var(--primary);
     color: var(--dark);
     margin-top: 0;
 }
@@ -214,7 +214,7 @@
 }
 
 .content-block {
-    margin-bottom: calc(var(--spacing-xl) * 1.25);
+    margin-bottom: var(--spacing-lg);
     padding: 0;
 }
 
@@ -292,10 +292,10 @@
 .category-card,
 .feature-card-doc {
     background: linear-gradient(135deg, rgba(0, 102, 204, 0.02) 0%, rgba(0, 168, 107, 0.02) 100%);
-    border: 2px solid var(--light-gray);
+    border: 1px solid var(--light-gray);
     border-radius: var(--radius-md);
-    padding: var(--spacing-xl);
-    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     transition: all var(--transition-base);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
@@ -709,10 +709,10 @@
 
 .variant-detail {
     background: var(--white);
-    border: 2px solid var(--light-gray);
+    border: 1px solid var(--light-gray);
     border-radius: var(--radius-md);
-    padding: calc(var(--spacing-lg) * 1.5);
-    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     transition: all var(--transition-base);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
@@ -785,10 +785,10 @@
 
 .variant-detail-metrics {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
-    padding: var(--spacing-lg);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-md);
     background: linear-gradient(135deg, rgba(0, 102, 204, 0.03) 0%, rgba(0, 168, 107, 0.03) 100%);
     border-radius: var(--radius-md);
     border: 1px solid rgba(0, 102, 204, 0.08);
@@ -796,7 +796,7 @@
 
 .metric {
     text-align: center;
-    padding: var(--spacing-md);
+    padding: var(--spacing-sm);
     border-radius: var(--radius-sm);
     background: var(--white);
 }
@@ -883,21 +883,23 @@
 /* Execution Plan Table */
 .execution-table-wrapper {
     overflow-x: auto;
-    margin: var(--spacing-xl) 0;
+    overflow-y: visible;
+    margin: var(--spacing-md) 0;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
     -webkit-overflow-scrolling: touch;
     width: 100%;
+    max-width: 100%;
     position: relative;
 }
 
 .execution-comparison-table {
     width: 100%;
-    min-width: 900px;
+    min-width: 1000px;
     border-collapse: collapse;
     background: var(--white);
-    font-size: var(--font-size-sm);
-    table-layout: auto;
+    font-size: 0.875rem;
+    table-layout: fixed;
 }
 
 .execution-comparison-table thead {
@@ -966,8 +968,8 @@
 /* Responsive Design for Documentation */
 @media (max-width: 1024px) {
     .doc-layout {
-        grid-template-columns: 240px 1fr;
-        gap: var(--spacing-md);
+        grid-template-columns: 220px 1fr;
+        gap: var(--spacing-sm);
     }
     
     .doc-sidebar {
@@ -975,16 +977,23 @@
     }
     
     .doc-content {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-md);
     }
     
     .execution-comparison-table {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        min-width: 900px;
     }
     
     .execution-comparison-table th,
     .execution-comparison-table td {
-        padding: var(--spacing-sm);
+        padding: 0.5rem 0.375rem;
+    }
+    
+    .category-card,
+    .feature-card-doc,
+    .variant-detail {
+        padding: var(--spacing-md);
     }
 }
 
@@ -996,72 +1005,108 @@
     .doc-sidebar {
         position: static;
         max-height: none;
-        margin-bottom: var(--spacing-md);
+        margin-bottom: var(--spacing-sm);
     }
     
     .doc-content {
-        padding: var(--spacing-md);
+        padding: var(--spacing-sm);
+    }
+    
+    .doc-section {
+        margin-bottom: var(--spacing-md);
+        padding-bottom: var(--spacing-md);
     }
     
     .section-heading {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
     }
     
     .heading-number {
         width: 40px;
         height: 40px;
-        font-size: var(--font-size-lg);
+        font-size: 1.25rem;
     }
     
     .feature-boxes,
     .journey-grid,
-    .role-grid {
+    .role-grid,
+    .architecture-variants {
         grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
     }
     
     .variant-detail-content {
         grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
     }
     
     .variant-detail-metrics {
         grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: var(--spacing-sm);
     }
     
     .execution-table-wrapper {
-        margin: var(--spacing-md) -var(--spacing-md);
+        margin: var(--spacing-sm) calc(var(--spacing-sm) * -1);
         border-radius: 0;
-        box-shadow: none;
     }
     
     .execution-comparison-table {
-        font-size: 0.75rem;
-        min-width: 800px;
+        font-size: 0.7rem;
+        min-width: 750px;
     }
     
     .execution-comparison-table th,
     .execution-comparison-table td {
-        padding: 0.5rem 0.375rem;
-        font-size: 0.75rem;
+        padding: 0.375rem 0.25rem;
+        font-size: 0.7rem;
     }
     
     .category-card,
     .feature-card-doc {
-        padding: var(--spacing-md);
+        padding: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .variant-detail {
+        padding: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .category-card h3,
+    .feature-card-doc h3 {
+        font-size: 1.25rem;
+    }
+    
+    .category-card h4,
+    .feature-card-doc h4 {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .doc-hero {
-        padding: 6rem 0 var(--spacing-lg);
+        padding: 5rem 0 var(--spacing-md);
     }
     
     .doc-title {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     
     .doc-subtitle {
-        font-size: var(--font-size-base);
+        font-size: 0.9rem;
+    }
+    
+    .doc-content {
+        padding: var(--spacing-sm);
+    }
+    
+    .doc-section {
+        margin-bottom: var(--spacing-sm);
+        padding-bottom: var(--spacing-sm);
     }
     
     .section-heading {
