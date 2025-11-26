@@ -38,7 +38,7 @@ window.addEventListener('scroll', () => {
 
 // ===== LAZY LOADING SECTIONS =====
 let currentLoadedSection = 2; // Already loaded: platform, categories
-const totalSections = 6; // Total sections to load
+const totalSections = 8; // Total sections to load (increased from 6)
 
 // Make function globally accessible
 window.loadNextSection = function() {
@@ -75,6 +75,12 @@ window.loadNextSection = function() {
                 break;
             case 5:
                 loadTechnicalArchitectureSection(loadMoreSection);
+                break;
+            case 6:
+                loadExecutionPlanSection(loadMoreSection);
+                break;
+            case 7:
+                loadVariantComparisonSection(loadMoreSection);
                 break;
         }
         
@@ -919,6 +925,561 @@ function loadTechnicalArchitectureSection(insertBefore) {
                 <li>Microservices architecture for independent service scaling</li>
                 <li>Multi-region deployment for global availability</li>
             </ul>
+        </div>
+    `;
+    
+    insertBefore.parentNode.insertBefore(section, insertBefore);
+}
+
+function loadExecutionPlanSection(insertBefore) {
+    const section = document.createElement('section');
+    section.id = 'execution-plan';
+    section.className = 'doc-section';
+    section.innerHTML = `
+        <h2 class="section-heading">
+            <span class="heading-number">07</span>
+            Execution Plan Overview
+        </h2>
+
+        <div class="section-intro">
+            <p class="lead-text">SwapMart offers six carefully designed implementation variants, each tailored to different business requirements, budgets, and timelines. From a web-only MVP to an enterprise-scale global ecosystem, choose the path that aligns with your strategic goals.</p>
+        </div>
+
+        <div class="architecture-variants">
+            <div class="variant-detail">
+                <div class="variant-detail-header">
+                    <span class="variant-detail-number">1</span>
+                    <h3>Web-Only MVP</h3>
+                </div>
+                <p class="variant-detail-desc">Minimal viable product focused on electronics buyback through web platform, establishing core marketplace functionality and validating business model.</p>
+                <div class="variant-detail-metrics">
+                    <div class="metric">
+                        <span class="metric-label">Timeline</span>
+                        <span class="metric-value">8 weeks</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Budget</span>
+                        <span class="metric-value">₹2.5-4L</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Team Size</span>
+                        <span class="metric-value">3-4</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Scalability</span>
+                        <span class="metric-value">1K users</span>
+                    </div>
+                </div>
+                <div class="variant-detail-content">
+                    <div class="variant-tech">
+                        <h4>Tech Stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag-doc">React.js</span>
+                            <span class="tech-tag-doc">Node.js</span>
+                            <span class="tech-tag-doc">MongoDB</span>
+                            <span class="tech-tag-doc">Material-UI</span>
+                        </div>
+                    </div>
+                    <div class="variant-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Electronics-only marketplace</li>
+                            <li>Basic user authentication</li>
+                            <li>Simple listing creation</li>
+                            <li>Direct messaging</li>
+                            <li>Single admin dashboard</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="variant-detail">
+                <div class="variant-detail-header">
+                    <span class="variant-detail-number">2</span>
+                    <h3>Enhanced Web Platform</h3>
+                </div>
+                <p class="variant-detail-desc">Comprehensive web platform supporting all product categories with peer-to-peer functionality, enhanced admin capabilities, and PWA support.</p>
+                <div class="variant-detail-metrics">
+                    <div class="metric">
+                        <span class="metric-label">Timeline</span>
+                        <span class="metric-value">14 weeks</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Budget</span>
+                        <span class="metric-value">₹5-7.5L</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Team Size</span>
+                        <span class="metric-value">4-6</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Scalability</span>
+                        <span class="metric-value">10K users</span>
+                    </div>
+                </div>
+                <div class="variant-detail-content">
+                    <div class="variant-tech">
+                        <h4>Tech Stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag-doc">Next.js</span>
+                            <span class="tech-tag-doc">PostgreSQL</span>
+                            <span class="tech-tag-doc">Redis</span>
+                            <span class="tech-tag-doc">AWS S3</span>
+                            <span class="tech-tag-doc">Socket.io</span>
+                        </div>
+                    </div>
+                    <div class="variant-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>All product categories</li>
+                            <li>PWA capabilities</li>
+                            <li>Real-time chat</li>
+                            <li>Bidding system</li>
+                            <li>Multi-user admin panel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="variant-detail">
+                <div class="variant-detail-header">
+                    <span class="variant-detail-number">3</span>
+                    <h3>Web + Hybrid Mobile</h3>
+                </div>
+                <p class="variant-detail-desc">Cross-platform reach with web and hybrid mobile apps (React Native), basic QC integration, and enhanced seller tools.</p>
+                <div class="variant-detail-metrics">
+                    <div class="metric">
+                        <span class="metric-label">Timeline</span>
+                        <span class="metric-value">22 weeks</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Budget</span>
+                        <span class="metric-value">₹9-13L</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Team Size</span>
+                        <span class="metric-value">6-8</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Scalability</span>
+                        <span class="metric-value">50K users</span>
+                    </div>
+                </div>
+                <div class="variant-detail-content">
+                    <div class="variant-tech">
+                        <h4>Tech Stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag-doc">React Native</span>
+                            <span class="tech-tag-doc">GraphQL</span>
+                            <span class="tech-tag-doc">Elasticsearch</span>
+                            <span class="tech-tag-doc">Docker</span>
+                        </div>
+                    </div>
+                    <div class="variant-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>iOS & Android apps</li>
+                            <li>Push notifications</li>
+                            <li>QC scheduling system</li>
+                            <li>Video calling</li>
+                            <li>Advanced analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="variant-detail variant-detail-recommended">
+                <span class="recommended-badge-doc">Recommended</span>
+                <div class="variant-detail-header">
+                    <span class="variant-detail-number">4</span>
+                    <h3>Full-Stack Cross-Platform</h3>
+                </div>
+                <p class="variant-detail-desc">Complete marketplace with native iOS/Android apps, automated QC workflows, hierarchical admin system, and robust payment integration.</p>
+                <div class="variant-detail-metrics">
+                    <div class="metric">
+                        <span class="metric-label">Timeline</span>
+                        <span class="metric-value">30 weeks</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Budget</span>
+                        <span class="metric-value">₹14-18L</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Team Size</span>
+                        <span class="metric-value">8-12</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Scalability</span>
+                        <span class="metric-value">500K users</span>
+                    </div>
+                </div>
+                <div class="variant-detail-content">
+                    <div class="variant-tech">
+                        <h4>Tech Stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag-doc">Swift/SwiftUI</span>
+                            <span class="tech-tag-doc">Kotlin</span>
+                            <span class="tech-tag-doc">Microservices</span>
+                            <span class="tech-tag-doc">Kubernetes</span>
+                            <span class="tech-tag-doc">Redis Cluster</span>
+                        </div>
+                    </div>
+                    <div class="variant-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Native iOS & Android</li>
+                            <li>Automated QC workflows</li>
+                            <li>Full admin hierarchy</li>
+                            <li>EMI integration</li>
+                            <li>Fraud detection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="variant-detail">
+                <div class="variant-detail-header">
+                    <span class="variant-detail-number">5</span>
+                    <h3>Enterprise Scale</h3>
+                </div>
+                <p class="variant-detail-desc">High-performance platform with AI-assisted features, multi-region deployment, advanced analytics, and B2B capabilities.</p>
+                <div class="variant-detail-metrics">
+                    <div class="metric">
+                        <span class="metric-label">Timeline</span>
+                        <span class="metric-value">40 weeks</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Budget</span>
+                        <span class="metric-value">₹20-25L</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Team Size</span>
+                        <span class="metric-value">12-16</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Scalability</span>
+                        <span class="metric-value">5M users</span>
+                    </div>
+                </div>
+                <div class="variant-detail-content">
+                    <div class="variant-tech">
+                        <h4>Tech Stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag-doc">AI/ML Models</span>
+                            <span class="tech-tag-doc">Multi-Region AWS</span>
+                            <span class="tech-tag-doc">Apache Kafka</span>
+                            <span class="tech-tag-doc">DataDog</span>
+                        </div>
+                    </div>
+                    <div class="variant-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>AI price recommendations</li>
+                            <li>Image recognition</li>
+                            <li>B2B marketplace</li>
+                            <li>Advanced fraud prevention</li>
+                            <li>Enterprise analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="variant-detail">
+                <div class="variant-detail-header">
+                    <span class="variant-detail-number">6</span>
+                    <h3>Global Ecosystem</h3>
+                </div>
+                <p class="variant-detail-desc">International marketplace with multi-currency, multi-language, advanced AI, blockchain verification, and sustainability tracking.</p>
+                <div class="variant-detail-metrics">
+                    <div class="metric">
+                        <span class="metric-label">Timeline</span>
+                        <span class="metric-value">52+ weeks</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Budget</span>
+                        <span class="metric-value">₹30L+</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Team Size</span>
+                        <span class="metric-value">16+</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Scalability</span>
+                        <span class="metric-value">50M+ users</span>
+                    </div>
+                </div>
+                <div class="variant-detail-content">
+                    <div class="variant-tech">
+                        <h4>Tech Stack</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag-doc">Blockchain</span>
+                            <span class="tech-tag-doc">Advanced AI</span>
+                            <span class="tech-tag-doc">Multi-Region CDN</span>
+                            <span class="tech-tag-doc">IoT Integration</span>
+                        </div>
+                    </div>
+                    <div class="variant-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Multi-currency support</li>
+                            <li>Blockchain verification</li>
+                            <li>AR product preview</li>
+                            <li>Carbon footprint tracking</li>
+                            <li>Global logistics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-callout info-callout-accent">
+            <h4>💡 Choosing the Right Variant</h4>
+            <p><strong>Variant 4 (Full-Stack Cross-Platform)</strong> is recommended for most businesses as it provides:</p>
+            <ul>
+                <li>Complete feature set for all user types</li>
+                <li>Native mobile experience for maximum engagement</li>
+                <li>Scalable architecture supporting 500K+ users</li>
+                <li>Professional admin and QC infrastructure</li>
+                <li>Clear path to upgrade to Variant 5 as you grow</li>
+            </ul>
+            <p>Start with Variant 1 or 2 if you need rapid market validation with limited budget, or jump to Variant 5 if you have enterprise backing and multi-region ambitions from day one.</p>
+        </div>
+    `;
+    
+    insertBefore.parentNode.insertBefore(section, insertBefore);
+}
+
+function loadVariantComparisonSection(insertBefore) {
+    const section = document.createElement('section');
+    section.id = 'variant-comparison';
+    section.className = 'doc-section';
+    section.innerHTML = `
+        <h2 class="section-heading">
+            <span class="heading-number">08</span>
+            Variant Comparison Matrix
+        </h2>
+
+        <div class="section-intro">
+            <p class="lead-text">Detailed side-by-side comparison of all implementation variants to help you make an informed decision based on your specific requirements, budget, and timeline.</p>
+        </div>
+
+        <div class="execution-table-wrapper">
+            <table class="execution-comparison-table">
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>Variant 1</th>
+                        <th>Variant 2</th>
+                        <th>Variant 3</th>
+                        <th class="recommended-column">Variant 4 ⭐</th>
+                        <th>Variant 5</th>
+                        <th>Variant 6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table-highlight">Scope</td>
+                        <td>Web MVP</td>
+                        <td>Enhanced Web</td>
+                        <td>Web + Hybrid Mobile</td>
+                        <td class="recommended-column">Full Cross-Platform</td>
+                        <td>Enterprise Scale</td>
+                        <td>Global Ecosystem</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Timeline</td>
+                        <td>8 weeks</td>
+                        <td>14 weeks</td>
+                        <td>22 weeks</td>
+                        <td class="recommended-column">30 weeks</td>
+                        <td>40 weeks</td>
+                        <td>52+ weeks</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Budget (INR)</td>
+                        <td>2.5-4L</td>
+                        <td>5-7.5L</td>
+                        <td>9-13L</td>
+                        <td class="recommended-column">14-18L</td>
+                        <td>20-25L</td>
+                        <td>30L+</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Team Size</td>
+                        <td>3-4</td>
+                        <td>4-6</td>
+                        <td>6-8</td>
+                        <td class="recommended-column">8-12</td>
+                        <td>12-16</td>
+                        <td>16+</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Platforms</td>
+                        <td>Web only</td>
+                        <td>Web + PWA</td>
+                        <td>Web + Hybrid Mobile</td>
+                        <td class="recommended-column">Web + Native iOS/Android</td>
+                        <td>Multi-region native</td>
+                        <td>Global infrastructure</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Categories</td>
+                        <td>Electronics only</td>
+                        <td>All categories (basic)</td>
+                        <td>All categories</td>
+                        <td class="recommended-column">All categories (full features)</td>
+                        <td>All + advanced features</td>
+                        <td>All + innovations</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Admin Panel</td>
+                        <td>Basic dashboard</td>
+                        <td>Enhanced admin</td>
+                        <td>Multi-role admin</td>
+                        <td class="recommended-column">Full hierarchical admin</td>
+                        <td>Enterprise admin</td>
+                        <td>Global governance</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">QC System</td>
+                        <td>Manual process</td>
+                        <td>Basic scheduling</td>
+                        <td>Integrated QC workflow</td>
+                        <td class="recommended-column">Full QC automation</td>
+                        <td>AI-assisted QC</td>
+                        <td>Predictive quality</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Scalability</td>
+                        <td>1K users</td>
+                        <td>10K users</td>
+                        <td>50K users</td>
+                        <td class="recommended-column">500K users</td>
+                        <td>5M users</td>
+                        <td>50M+ users</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Payment Options</td>
+                        <td>Basic (UPI, Cards)</td>
+                        <td>Multiple gateways</td>
+                        <td>Full payment suite</td>
+                        <td class="recommended-column">EMI + International</td>
+                        <td>B2B payment terms</td>
+                        <td>Multi-currency + Crypto</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Communication</td>
+                        <td>Basic messaging</td>
+                        <td>Real-time chat</td>
+                        <td>Video calling</td>
+                        <td class="recommended-column">Full communication suite</td>
+                        <td>AI chat assistance</td>
+                        <td>Multi-language AI support</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Analytics</td>
+                        <td>Basic reports</td>
+                        <td>Standard analytics</td>
+                        <td>Advanced analytics</td>
+                        <td class="recommended-column">Comprehensive insights</td>
+                        <td>Predictive analytics</td>
+                        <td>AI-powered BI</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">AI Features</td>
+                        <td>None</td>
+                        <td>None</td>
+                        <td>Basic recommendations</td>
+                        <td class="recommended-column">Smart pricing + Fraud detection</td>
+                        <td>Advanced AI/ML</td>
+                        <td>Computer vision + NLP</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Security</td>
+                        <td>Basic SSL</td>
+                        <td>Enhanced security</td>
+                        <td>Advanced encryption</td>
+                        <td class="recommended-column">Enterprise security</td>
+                        <td>SOC 2 compliance</td>
+                        <td>Blockchain + Biometric</td>
+                    </tr>
+                    <tr>
+                        <td class="table-highlight">Support</td>
+                        <td>Email only</td>
+                        <td>Email + Chat</td>
+                        <td>Multi-channel</td>
+                        <td class="recommended-column">24/7 support system</td>
+                        <td>Dedicated account managers</td>
+                        <td>Global support centers</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="content-block">
+            <h3>Decision Framework</h3>
+            
+            <h4>Choose Variant 1 if:</h4>
+            <ul>
+                <li>You need to validate the business model quickly with minimal investment</li>
+                <li>Target market is limited to electronics buyback in a specific region</li>
+                <li>Budget constraint is under ₹5 lakhs</li>
+                <li>You want to test market demand before scaling</li>
+            </ul>
+
+            <h4>Choose Variant 2 if:</h4>
+            <ul>
+                <li>You want full product category coverage from day one</li>
+                <li>Primary audience uses desktop/web for marketplace shopping</li>
+                <li>PWA can satisfy mobile needs initially</li>
+                <li>Budget is ₹5-8 lakhs with 3-4 month timeline</li>
+            </ul>
+
+            <h4>Choose Variant 3 if:</h4>
+            <ul>
+                <li>Mobile presence is essential but native apps aren't critical initially</li>
+                <li>You need cross-platform reach within 5-6 months</li>
+                <li>Budget allows ₹9-13 lakhs for hybrid approach</li>
+                <li>Plan to transition to native apps in later phase</li>
+            </ul>
+
+            <h4>Choose Variant 4 (Recommended) if:</h4>
+            <ul>
+                <li>You want a complete, production-ready marketplace from launch</li>
+                <li>Native mobile experience is important for user engagement</li>
+                <li>You have ₹14-18 lakhs budget and 7-8 month timeline</li>
+                <li>Plan to scale to hundreds of thousands of users</li>
+                <li>Need professional admin infrastructure and automated QC</li>
+            </ul>
+
+            <h4>Choose Variant 5 if:</h4>
+            <ul>
+                <li>You have enterprise backing or significant funding</li>
+                <li>Multi-region expansion is part of near-term strategy</li>
+                <li>AI-powered features are competitive differentiators</li>
+                <li>Budget exceeds ₹20 lakhs with 10+ month timeline</li>
+                <li>Target is millions of users within 12-18 months</li>
+            </ul>
+
+            <h4>Choose Variant 6 if:</h4>
+            <ul>
+                <li>You're building a global marketplace from inception</li>
+                <li>Innovation in sustainability and blockchain verification is core to brand</li>
+                <li>Budget is ₹30+ lakhs with 12+ month development cycle</li>
+                <li>Long-term vision includes tens of millions of international users</li>
+            </ul>
+        </div>
+
+        <div class="info-callout">
+            <h4>🚀 Phased Approach Recommendation</h4>
+            <p>For most startups and businesses, we recommend:</p>
+            <ul>
+                <li><strong>Phase 1:</strong> Launch with Variant 2 or 3 to validate market fit and gather user feedback (3-6 months)</li>
+                <li><strong>Phase 2:</strong> Upgrade to Variant 4 once you have 5K+ active users and proven product-market fit (next 6 months)</li>
+                <li><strong>Phase 3:</strong> Scale to Variant 5 when crossing 100K users and expanding to new regions (12-18 months)</li>
+                <li><strong>Phase 4:</strong> Evolution to Variant 6 for international dominance (18+ months)</li>
+            </ul>
+            <p>This phased approach minimizes risk, optimizes cash flow, and ensures each development phase is informed by real user data and market feedback.</p>
         </div>
     `;
     
